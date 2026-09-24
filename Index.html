@@ -1,0 +1,693 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>鳳山店店長實戰心法與思維框架</title>
+    
+    <!-- 引入 Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- 引入 FontAwesome 圖示 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- 引入 Google Fonts (Inter) -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;900&display=swap" rel="stylesheet">
+    
+    <!-- 自訂樣式 -->
+    <style>
+        body {
+            font-family: 'Inter', 'Noto Sans TC', sans-serif;
+            background-color: #f8fafc; /* Tailwind slate-50 */
+            scroll-behavior: smooth;
+        }
+        .glass-header {
+            background: rgba(15, 23, 42, 0.85); /* Tailwind slate-900 */
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+        }
+        /* 隱藏捲軸但保持可捲動 */
+        ::-webkit-scrollbar {
+            width: 6px;
+            height: 6px;
+        }
+        ::-webkit-scrollbar-track {
+            background: transparent;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #cbd5e1;
+            border-radius: 10px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #94a3b8;
+        }
+    </style>
+</head>
+<body class="flex flex-col min-h-screen">
+
+    <!-- Top Sticky Header -->
+    <header class="sticky top-0 z-50 glass-header border-b border-slate-800 text-white transition-all shadow-md">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 h-16 flex items-center justify-between">
+            <div class="flex items-center gap-3">
+                <span class="font-bold text-base sm:text-lg tracking-tight flex items-center gap-2">
+                    <i class="fa-solid fa-compass text-amber-400"></i> 店長實戰心法與思維框架
+                </span>
+            </div>
+            <!-- Desktop Navigation -->
+            <nav class="hidden md:flex items-center gap-6 text-sm text-slate-300 font-medium">
+                <a href="#cooperation-rules" class="hover:text-amber-400 transition-colors">配合度底層解法</a>
+                <a href="#bb-logic" class="hover:text-amber-400 transition-colors">B&B 思維邏輯</a>
+                <a href="#three-steps" class="hover:text-amber-400 transition-colors">溝通三步驟</a>
+                <a href="#timeline-phase" class="hover:text-amber-400 transition-colors">著陸節奏</a>
+                <a href="#interview-records" class="hover:text-amber-400 transition-colors">訪談紀錄</a>
+                <a href="#coach-thinking" class="hover:text-amber-400 transition-colors">教練思維</a>
+            </nav>
+            <div class="flex items-center gap-2">
+                <a href="#xinjie-mindset" class="bg-slate-800 hover:bg-slate-700 text-amber-400 text-xs font-semibold px-3 py-1.5 rounded-lg border border-slate-700 transition-all flex items-center gap-1.5">
+                    <i class="fa-solid fa-lightbulb"></i> 賴信吉店長交流
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <main class="flex-grow">
+        <!-- Hero Section -->
+        <section class="bg-gradient-to-b from-slate-900 via-slate-800 to-slate-900 text-white py-14 px-4 sm:px-6 relative overflow-hidden border-b border-slate-800">
+            <div class="absolute inset-0 bg-[radial-gradient(#334155_1px,transparent_1px)] [background-size:20px_20px] opacity-25"></div>
+            <div class="max-w-4xl mx-auto relative z-10 text-center space-y-4">
+                <h1 class="text-3xl sm:text-4xl md:text-5xl font-black text-white tracking-tight leading-tight pt-6">
+                    不急著當好好先生，<br class="hidden sm:block">
+                    建立<span class="text-amber-400">「可複製的管理邏輯」</span>才是硬底氣！
+                </h1>
+                <p class="text-slate-300 text-base sm:text-lg max-w-2xl mx-auto leading-relaxed pt-2">
+                    我希望帶給你的不是單一問題的答案，而是面對「師父配合度低」等狀況時，能自己獨立判斷與拆解問題的思考工具。
+                </p>
+            </div>
+        </section>
+
+        <!-- 主要內容區塊 -->
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 py-10 space-y-12">
+
+            <!-- 1. 配合度底層解法 -->
+            <section id="cooperation-rules" class="bg-white rounded-2xl p-6 sm:p-8 shadow-sm border border-slate-200">
+                <div class="flex flex-col sm:flex-row gap-6 mb-8">
+                    <div class="flex-grow">
+                        <div class="flex items-center gap-3 mb-2">
+                            <div class="w-10 h-10 rounded-xl bg-rose-50 text-rose-600 flex items-center justify-center font-bold text-lg shadow-sm">
+                                <i class="fa-solid fa-handshake-angle"></i>
+                            </div>
+                            <div>
+                                <span class="text-xs font-bold tracking-wider text-rose-600 uppercase">破除討好迷思</span>
+                                <h2 class="text-xl sm:text-2xl font-black text-slate-900">配合度低，不是靠「套交情」解決</h2>
+                            </div>
+                        </div>
+                        <p class="text-sm text-slate-600 leading-relaxed mt-3">
+                            店長最容易落入的陷阱，就是以為「我對師父越好、跟他們越熟，他們就會配合」。<br>
+                            真正的管理秩序是建立在：<span class="font-bold text-slate-900 bg-amber-100 px-1.5 py-0.5 rounded mx-1">公平</span> ➔ <span class="font-bold text-slate-900 bg-amber-100 px-1.5 py-0.5 rounded mx-1">規則</span> ➔ <span class="font-bold text-slate-900 bg-amber-100 px-1.5 py-0.5 rounded mx-1">信任</span> ➔ <span class="font-bold text-slate-900 bg-amber-100 px-1.5 py-0.5 rounded mx-1">配合</span>
+                        </p>
+                    </div>
+                    <div class="bg-emerald-50/70 border border-emerald-200 rounded-xl p-5 shrink-0 sm:w-72">
+                        <div class="flex items-center gap-2 text-emerald-800 font-bold mb-2">
+                            <i class="fa-solid fa-circle-check text-emerald-600"></i> 管理的核心真相
+                        </div>
+                        <p class="text-sm text-emerald-900 font-medium mb-2">「關係是加分項，但絕對不是管理的核心。」</p>
+                        <p class="text-xs text-slate-600 leading-relaxed">
+                            團隊的服從與配合，來自於管理者行事透明與公平。私交再好，制度不公一樣內鬨；私交普通，只要制度公正嚴明，大家都能在軌道上安心賺錢。
+                        </p>
+                    </div>
+                </div>
+
+                <!-- 異常狀況四類型 -->
+                <div>
+                    <h3 class="text-sm font-black text-slate-800 mb-4 flex items-center gap-2">
+                        <i class="fa-solid fa-layer-group text-slate-400"></i> 當師父不願配合時的「四層次歸因」
+                    </h3>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                        <div class="p-3.5 rounded-xl border border-slate-200 bg-slate-50 flex items-start gap-3">
+                            <span class="px-2 py-0.5 rounded bg-blue-100 text-blue-800 text-xs font-bold mt-0.5 shrink-0">類型 A</span>
+                            <div>
+                                <div class="font-bold text-slate-800">合理的問題與顧慮</div>
+                                <p class="text-xs text-slate-600 mt-0.5">例如：連續做重症客手部受傷、身體不適需要休息。</p>
+                                <div class="mt-1.5 text-xs text-blue-700 font-semibold">👉 處置：調整制度、排班微調，店長給予支持保護。</div>
+                            </div>
+                        </div>
+
+                        <div class="p-3.5 rounded-xl border border-slate-200 bg-slate-50 flex items-start gap-3">
+                            <span class="px-2 py-0.5 rounded bg-amber-100 text-amber-800 text-xs font-bold mt-0.5 shrink-0">類型 B</span>
+                            <div>
+                                <div class="font-bold text-slate-800">資訊不對稱 / 誤解</div>
+                                <p class="text-xs text-slate-600 mt-0.5">例如：誤以為排班跳號、以為別人有特權。</p>
+                                <div class="mt-1.5 text-xs text-amber-700 font-semibold">👉 處置：攤開數據與排班紀錄，清楚說明現場規則。</div>
+                            </div>
+                        </div>
+
+                        <div class="p-3.5 rounded-xl border border-slate-200 bg-slate-50 flex items-start gap-3">
+                            <span class="px-2 py-0.5 rounded bg-purple-100 text-purple-800 text-xs font-bold mt-0.5 shrink-0">類型 C</span>
+                            <div>
+                                <div class="font-bold text-slate-800">個人私心習慣</div>
+                                <p class="text-xs text-slate-600 mt-0.5">例如：挑特定時段做、嫌客人重。</p>
+                                <div class="mt-1.5 text-xs text-purple-700 font-semibold">👉 處置：溫和堅定拉回「現場公開規則」，絕不破例。</div>
+                            </div>
+                        </div>
+
+                        <div class="p-3.5 rounded-xl border border-rose-200 bg-rose-50/60 flex items-start gap-3">
+                            <span class="px-2 py-0.5 rounded bg-rose-100 text-rose-800 text-xs font-bold mt-0.5 shrink-0">類型 D</span>
+                            <div>
+                                <div class="font-bold text-slate-800">長期蓄意不配合</div>
+                                <p class="text-xs text-slate-600 mt-0.5">例如：公然挑戰底線、長期破壞團隊氣氛。</p>
+                                <div class="mt-1.5 text-xs text-rose-700 font-semibold">👉 處置：非溝通技巧能解決，依公司規章提報懲處。</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 2. B & B 的思維邏輯 (新增區塊) -->
+            <section id="bb-logic" class="bg-slate-900 rounded-2xl p-6 sm:p-8 shadow-md">
+                <div class="mb-6">
+                    <span class="text-xs font-bold tracking-wider text-amber-400 uppercase">深度洞察</span>
+                    <h2 class="text-xl sm:text-2xl font-black text-white mt-1">B & B 的思維邏輯：挖掘「問題背後的問題」</h2>
+                    <p class="text-sm text-slate-400 mt-2">
+                        B & B (Behind & Beneath)。當師父發出抱怨或不配合時，不要只處理「表面情緒」，要找出隱藏在底下的「真實動機與系統漏洞」。
+                    </p>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <!-- 比較卡片 1 -->
+                    <div class="bg-slate-800/80 border border-slate-700 rounded-xl p-5 relative overflow-hidden hover:border-amber-400/50 transition-all">
+                        <div class="absolute right-0 top-0 w-16 h-16 bg-rose-500/10 rounded-bl-[100px] flex items-start justify-end p-3">
+                            <i class="fa-solid fa-mask text-rose-400/50 text-xl"></i>
+                        </div>
+                        <div class="text-rose-400 font-bold text-sm mb-1">❌ 表面問題 (Surface)</div>
+                        <div class="text-white font-black text-base mb-3">「師父總愛挑客、嫌客人難按」</div>
+                        <div class="h-px w-full bg-slate-700 mb-3"></div>
+                        <div class="text-emerald-400 font-bold text-sm mb-1 flex items-center gap-1">
+                            <i class="fa-solid fa-magnifying-glass"></i> B & B 背後的問題
+                        </div>
+                        <ul class="text-slate-300 text-xs space-y-1.5 list-disc pl-4">
+                            <li>是不是連續排班讓他體力透支，缺乏喘息機制？</li>
+                            <li>是不是某些重症客人的確超過單人負荷，需要機制協助？</li>
+                            <li>是不是之前他默默接下來，卻沒有得到管理者的看見與肯定？</li>
+                        </ul>
+                    </div>
+
+                    <!-- 比較卡片 2 -->
+                    <div class="bg-slate-800/80 border border-slate-700 rounded-xl p-5 relative overflow-hidden hover:border-amber-400/50 transition-all">
+                        <div class="absolute right-0 top-0 w-16 h-16 bg-rose-500/10 rounded-bl-[100px] flex items-start justify-end p-3">
+                            <i class="fa-solid fa-mask text-rose-400/50 text-xl"></i>
+                        </div>
+                        <div class="text-rose-400 font-bold text-sm mb-1">❌ 表面問題 (Surface)</div>
+                        <div class="text-white font-black text-base mb-3">「師父對排班規則斤斤計較、常常抗議」</div>
+                        <div class="h-px w-full bg-slate-700 mb-3"></div>
+                        <div class="text-emerald-400 font-bold text-sm mb-1 flex items-center gap-1">
+                            <i class="fa-solid fa-magnifying-glass"></i> B & B 背後的問題
+                        </div>
+                        <ul class="text-slate-300 text-xs space-y-1.5 list-disc pl-4">
+                            <li>是不是曾有過「會吵的人有糖吃」的特例，破壞了信任？</li>
+                            <li>是不是現場排班邏輯不夠透明，導致資訊落差產生猜忌？</li>
+                            <li>是不是他對自己目前的收入有焦慮感，所以對公平性極度敏感？</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="mt-5 bg-amber-500/10 border border-amber-500/30 rounded-lg p-4 flex gap-3 items-start">
+                    <i class="fa-solid fa-lightbulb text-amber-400 text-lg mt-0.5 shrink-0"></i>
+                    <div>
+                        <div class="text-amber-400 font-bold text-sm mb-1">店長自我提問法</div>
+                        <p class="text-xs text-slate-300">
+                            在回應衝突前，先在心裡問自己：「他真正在氣的，是眼前的這件事，還是過去累積的某種『不公平感』？」解決了背後的情緒與制度破洞，表面問題往往會自動消失。
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 3. 溝通三步驟 -->
+            <section id="three-steps" class="bg-white rounded-2xl p-6 sm:p-8 shadow-sm border border-slate-200">
+                <div class="mb-6">
+                    <span class="text-xs font-bold tracking-wider text-amber-500 uppercase">話術與底線</span>
+                    <h2 class="text-xl sm:text-2xl font-black text-slate-900 mt-1">現場溝通黃金三步驟</h2>
+                    <p class="text-sm text-slate-600 mt-2">不要第一時間硬碰硬，也不要無底線退讓。用這三句話拆解衝突。</p>
+                </div>
+
+                <div class="space-y-4">
+                    <!-- Step 1 -->
+                    <div class="bg-slate-50 border border-slate-200 rounded-xl p-5">
+                        <div class="flex items-center justify-between mb-2">
+                            <span class="text-xs font-black px-2.5 py-1 rounded bg-amber-400 text-slate-950 uppercase">第一步：先聽原因（卸除防備）</span>
+                            <i class="fa-solid fa-ear-listen text-amber-500"></i>
+                        </div>
+                        <p class="text-xs text-slate-600 mb-2">不批判、不下結論，讓對方把不滿與阻力講完，給予情緒出口。</p>
+                        <div class="bg-white p-3 rounded-lg border border-slate-200 shadow-sm">
+                            <span class="text-sm font-semibold text-amber-700 block">
+                                「我想先了解一下，你為什麼不希望這樣安排？」
+                            </span>
+                        </div>
+                    </div>
+
+                    <!-- Step 2 -->
+                    <div class="bg-slate-50 border border-slate-200 rounded-xl p-5">
+                        <div class="flex items-center justify-between mb-2">
+                            <span class="text-xs font-black px-2.5 py-1 rounded bg-sky-400 text-slate-950 uppercase">第二步：確認問題（聚焦事實）</span>
+                            <i class="fa-solid fa-bullseye text-sky-500"></i>
+                        </div>
+                        <p class="text-xs text-slate-600 mb-2">把對方的抱怨提煉成「具體客觀條件」，避免模糊的情緒宣洩。</p>
+                        <div class="bg-white p-3 rounded-lg border border-slate-200 shadow-sm">
+                            <span class="text-sm font-semibold text-sky-700 block">
+                                「所以你的意思是因為＿＿，所以你覺得這樣安排不合理，對嗎？」
+                            </span>
+                        </div>
+                    </div>
+
+                    <!-- Step 3 -->
+                    <div class="bg-slate-50 border border-slate-200 rounded-xl p-5">
+                        <div class="flex items-center justify-between mb-2">
+                            <span class="text-xs font-black px-2.5 py-1 rounded bg-emerald-400 text-slate-950 uppercase">第三步：回到規則（理性結尾）</span>
+                            <i class="fa-solid fa-scale-balanced text-emerald-500"></i>
+                        </div>
+                        <p class="text-xs text-slate-600 mb-2">有難處給予支持；若是既定公平規則，則堅定回歸執行，不留模糊空間。</p>
+                        <div class="bg-white p-3 rounded-lg border border-slate-200 shadow-sm">
+                            <span class="text-sm font-semibold text-emerald-700 block">
+                                「了解，如果是這個問題我們可以處理；但如果符合現場規則，還是要依照規則執行。」
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 4. 店長著陸節奏 -->
+            <section id="timeline-phase" class="bg-white rounded-2xl p-6 sm:p-8 shadow-sm border border-slate-200">
+                <div class="mb-8">
+                    <span class="text-xs font-bold tracking-wider text-emerald-600 uppercase">管理實務</span>
+                    <h2 class="text-xl sm:text-2xl font-black text-slate-900 mt-1">店長上任的三階段「著陸節奏」</h2>
+                    <p class="text-sm text-slate-600 mt-2">
+                        最忌諱：一到店 ➔ 發現問題 ➔ 馬上大刀闊斧改革 ➔ 師父強烈反彈。<br>
+                        請依照以下三個階段建立你的管理威信：
+                    </p>
+                </div>
+
+                <div class="space-y-6 sm:space-y-0 sm:space-x-8 sm:flex sm:items-start relative">
+                    <!-- 隱藏的連線 (桌面版) -->
+                    <div class="hidden sm:block absolute top-6 left-5 right-5 h-0.5 bg-slate-200 z-0"></div>
+                    
+                    <!-- 階段 1 -->
+                    <div class="relative flex-1 flex items-start gap-4 sm:gap-0 sm:flex-col sm:items-center">
+                        <div class="w-10 h-10 rounded-full bg-slate-800 text-white font-black text-sm flex items-center justify-center shrink-0 ring-4 ring-white z-10 mb-0 sm:mb-4">
+                            1
+                        </div>
+                        <div class="flex-grow bg-slate-50 border border-slate-200 rounded-xl p-4 sm:text-center w-full">
+                            <h4 class="font-black text-slate-900 text-base mb-1">【聽與看】現況盤點</h4>
+                            <span class="inline-block text-[10px] font-bold text-slate-500 bg-slate-200 px-2 py-0.5 rounded mb-2">初期不急著改</span>
+                            <ul class="text-xs text-slate-600 space-y-1.5 sm:text-left">
+                                <li><i class="fa-solid fa-eye text-slate-400 w-4"></i> 觀察誰最配合、誰常反彈。</li>
+                                <li><i class="fa-solid fa-bolt text-slate-400 w-4"></i> 找出最容易引發衝突的痛點。</li>
+                                <li><i class="fa-solid fa-book-open text-slate-400 w-4"></i> 檢視現有規則是否本身有漏洞。</li>
+                                <li><i class="fa-solid fa-users text-slate-400 w-4"></i> 觀察總監與師父目前的互動模式。</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- 階段 2 -->
+                    <div class="relative flex-1 flex items-start gap-4 sm:gap-0 sm:flex-col sm:items-center mt-6 sm:mt-0">
+                        <div class="w-10 h-10 rounded-full bg-amber-500 text-slate-900 font-black text-sm flex items-center justify-center shrink-0 ring-4 ring-white z-10 mb-0 sm:mb-4">
+                            2
+                        </div>
+                        <div class="flex-grow bg-amber-50/50 border border-amber-200 rounded-xl p-4 sm:text-center w-full">
+                            <h4 class="font-black text-amber-900 text-base mb-1">【調與磨】邊界測試</h4>
+                            <span class="inline-block text-[10px] font-bold text-amber-700 bg-amber-100 px-2 py-0.5 rounded mb-2">中期開始微調</span>
+                            <ul class="text-xs text-amber-800 space-y-1.5 sm:text-left">
+                                <li><i class="fa-solid fa-comments text-amber-500 w-4"></i> 能用溝通解決的，先進行溝通。</li>
+                                <li><i class="fa-solid fa-gavel text-amber-500 w-4"></i> 需要規則解決的，開始落實制度化。</li>
+                                <li><i class="fa-solid fa-file-pen text-amber-500 w-4"></i> 重複發生的問題，務必留下紀錄。</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- 階段 3 -->
+                    <div class="relative flex-1 flex items-start gap-4 sm:gap-0 sm:flex-col sm:items-center mt-6 sm:mt-0">
+                        <div class="w-10 h-10 rounded-full bg-emerald-600 text-white font-black text-sm flex items-center justify-center shrink-0 ring-4 ring-white z-10 mb-0 sm:mb-4">
+                            3
+                        </div>
+                        <div class="flex-grow bg-emerald-50/50 border border-emerald-200 rounded-xl p-4 sm:text-center w-full">
+                            <h4 class="font-black text-emerald-900 text-base mb-1">【穩與立】正軌管理</h4>
+                            <span class="inline-block text-[10px] font-bold text-emerald-700 bg-emerald-100 px-2 py-0.5 rounded mb-2">恩威並施</span>
+                            <ul class="text-xs text-emerald-800 space-y-1.5 sm:text-left">
+                                <li><i class="fa-solid fa-shield-heart text-emerald-500 w-4"></i> <span class="font-bold">合理要求：</span>給予全力支持保護。</li>
+                                <li><i class="fa-solid fa-scale-balanced text-emerald-500 w-4"></i> <span class="font-bold">合理規則：</span>堅定徹底執行不退讓。</li>
+                                <li><i class="fa-solid fa-triangle-exclamation text-emerald-500 w-4"></i> <span class="font-bold">重複違規：</span>照章處分，不再妥協。</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 4. 數位化訪談紀錄作成 (可搜尋、可查找) -->
+            <section id="interview-records" class="bg-white rounded-2xl p-6 sm:p-8 shadow-sm border border-slate-200">
+                <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4 mb-6 pb-4 border-b border-slate-100">
+                    <div class="flex items-center gap-3">
+                        <div class="w-10 h-10 rounded-xl bg-sky-50 text-sky-600 flex items-center justify-center font-bold text-lg shadow-sm">
+                            <i class="fa-solid fa-address-book"></i>
+                        </div>
+                        <div>
+                            <span class="text-xs font-bold tracking-wider text-sky-600 uppercase">管理數位化工具</span>
+                            <h2 class="text-xl sm:text-2xl font-black text-slate-900">師父訪談與溝通紀錄（數位化可查找）</h2>
+                        </div>
+                    </div>
+                    <button onclick="toggleRecordForm()" class="bg-sky-600 hover:bg-sky-700 text-white text-xs font-bold px-4 py-2 rounded-lg transition-all flex items-center gap-1.5 self-start sm:self-auto">
+                        <i class="fa-solid fa-plus"></i> 新增訪談紀錄
+                    </button>
+                </div>
+
+                <!-- 新增表單抽屜（預設隱藏） -->
+                <div id="record-form-container" class="hidden mb-6 p-5 rounded-xl bg-slate-50 border border-slate-200 transition-all">
+                    <h3 class="text-sm font-bold text-slate-800 mb-3 flex items-center gap-2">
+                        <i class="fa-solid fa-pen-to-square text-sky-600"></i> 建立新訪談作成卡
+                    </h3>
+                    <form id="interview-form" onsubmit="saveInterviewRecord(event)" class="space-y-4">
+                        <div class="grid grid-cols-1 sm:grid-cols-3 gap-3">
+                            <div>
+                                <label class="block text-xs font-semibold text-slate-700 mb-1">師父代號 / 姓名</label>
+                                <input type="text" id="record-staff" required placeholder="如：5號 / 王師父" class="w-full text-xs p-2.5 rounded-lg border border-slate-300 focus:outline-none focus:border-sky-500">
+                            </div>
+                            <div>
+                                <label class="block text-xs font-semibold text-slate-700 mb-1">訪談日期</label>
+                                <input type="date" id="record-date" required class="w-full text-xs p-2.5 rounded-lg border border-slate-300 focus:outline-none focus:border-sky-500">
+                            </div>
+                            <div>
+                                <label class="block text-xs font-semibold text-slate-700 mb-1">診斷歸類</label>
+                                <select id="record-type" class="w-full text-xs p-2.5 rounded-lg border border-slate-300 focus:outline-none focus:border-sky-500">
+                                    <option value="類型 A">類型 A：合理的問題 (保護支持)</option>
+                                    <option value="類型 B">類型 B：資訊不清楚 (說明規則)</option>
+                                    <option value="類型 C">類型 C：個人私心習慣 (回到規則)</option>
+                                    <option value="類型 D">類型 D：長期故意不配合 (依規提報)</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                            <div>
+                                <label class="block text-xs font-semibold text-slate-700 mb-1">師父陳述原因（客觀事實）</label>
+                                <textarea id="record-reason" rows="2" required placeholder="記錄師父反饋之具體訴求或爭端點..." class="w-full text-xs p-2.5 rounded-lg border border-slate-300 focus:outline-none focus:border-sky-500"></textarea>
+                            </div>
+                            <div>
+                                <label class="block text-xs font-semibold text-slate-700 mb-1">店長應對原則 / 後續決議</label>
+                                <textarea id="record-action" rows="2" required placeholder="記錄處理結果、規則重申或排班微調..." class="w-full text-xs p-2.5 rounded-lg border border-slate-300 focus:outline-none focus:border-sky-500"></textarea>
+                            </div>
+                        </div>
+                        <div class="flex justify-end gap-2 pt-2">
+                            <button type="button" onclick="toggleRecordForm()" class="text-xs px-3 py-1.5 rounded-lg border border-slate-300 text-slate-600 hover:bg-slate-100">取消</button>
+                            <button type="submit" class="text-xs px-4 py-1.5 rounded-lg bg-sky-600 text-white font-bold hover:bg-sky-700">儲存紀錄</button>
+                        </div>
+                    </form>
+                </div>
+
+                <!-- 搜尋與篩選列 -->
+                <div class="flex flex-col sm:flex-row gap-3 mb-5">
+                    <div class="relative flex-grow">
+                        <i class="fa-solid fa-magnifying-glass absolute left-3 top-3 text-slate-400 text-xs"></i>
+                        <input type="text" id="record-search" oninput="filterRecords()" placeholder="即時查找：輸入師父姓名、代號或事由關鍵字..." class="w-full text-xs pl-8 pr-3 py-2.5 rounded-lg border border-slate-300 focus:outline-none focus:border-sky-500">
+                    </div>
+                    <div class="flex items-center gap-2">
+                        <select id="record-filter-type" onchange="filterRecords()" class="text-xs py-2.5 px-3 rounded-lg border border-slate-300 bg-white text-slate-700 focus:outline-none">
+                            <option value="ALL">全部分類類型</option>
+                            <option value="類型 A">類型 A (合理問題)</option>
+                            <option value="類型 B">類型 B (資訊不清楚)</option>
+                            <option value="類型 C">類型 C (私心習慣)</option>
+                            <option value="類型 D">類型 D (故意不配合)</option>
+                        </select>
+                        <button onclick="resetRecordFilter()" class="text-xs px-2.5 py-2.5 text-slate-500 hover:text-slate-800 border border-slate-300 rounded-lg hover:bg-slate-50" title="重置搜尋">
+                            <i class="fa-solid fa-rotate-left"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- 紀錄卡片清單容器 -->
+                <div id="records-list" class="space-y-3">
+                    <!-- 動態注入紀錄卡片 -->
+                </div>
+                <div id="no-records-msg" class="hidden text-center py-8 text-xs text-slate-400">
+                    <i class="fa-regular fa-folder-open text-2xl mb-1 block"></i> 查無相符的訪談紀錄
+                </div>
+            </section>
+
+            <!-- 5. 教練引導法 -->
+            <section id="coach-thinking" class="bg-white rounded-2xl p-6 sm:p-8 shadow-sm border border-slate-200">
+                <div class="flex items-center gap-3 mb-6 pb-4 border-b border-slate-100">
+                    <div class="w-10 h-10 rounded-xl bg-indigo-50 text-indigo-600 flex items-center justify-center font-bold text-lg shadow-sm">
+                        <i class="fa-solid fa-chess-knight"></i>
+                    </div>
+                    <div>
+                        <span class="text-xs font-bold tracking-wider text-indigo-600 uppercase">管理培訓心法</span>
+                        <h2 class="text-xl sm:text-2xl font-black text-slate-900">教練的角色：引導思考，而不是替你做決定</h2>
+                    </div>
+                </div>
+
+                <div class="bg-slate-900 text-white p-5 rounded-xl mb-6">
+                    <div class="text-amber-400 font-bold text-xs tracking-wider uppercase mb-1">教練引導的核心目的</div>
+                    <h3 class="text-lg font-black leading-snug">「帶訓，不是替你預先決定未來的每個答案，而是把遇事如何拆解、判斷的思維雷達交給你。」</h3>
+                    <p class="text-xs text-slate-300 mt-2">
+                        如果我直接把所有現成解答塞給你，當你回到現場遇到未見過的變數，仍然會陷入猶豫。未來若遇到棘手狀況拿來問我，我也會先用這套「思維四問」帶你反推：
+                    </p>
+                </div>
+
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                    <div class="p-4 rounded-xl border border-slate-200 bg-slate-50 hover:bg-white hover:border-indigo-300 transition-all">
+                        <div class="text-xs font-bold text-indigo-600 mb-1">反問一：策略推演</div>
+                        <div class="text-sm font-black text-slate-900 mb-2">「你先跟我說，如果是你，你會怎麼處理？」</div>
+                        <p class="text-xs text-slate-600">迫使自己先站在決策者高度獨立思考，而不是當傳聲筒或把問題往上丟。</p>
+                    </div>
+
+                    <div class="p-4 rounded-xl border border-slate-200 bg-slate-50 hover:bg-white hover:border-indigo-300 transition-all">
+                        <div class="text-xs font-bold text-indigo-600 mb-1">反問二：風險評估</div>
+                        <div class="text-sm font-black text-slate-900 mb-2">「你這樣處理的風險是什麼？師父若還是不接受呢？」</div>
+                        <p class="text-xs text-slate-600">管理最怕單向思考，必須先想好備案（Plan B）與極限狀況的停損點。</p>
+                    </div>
+
+                    <div class="p-4 rounded-xl border border-slate-200 bg-slate-50 hover:bg-white hover:border-indigo-300 transition-all">
+                        <div class="text-xs font-bold text-indigo-600 mb-1">反問三：根因分析</div>
+                        <div class="text-sm font-black text-slate-900 mb-2">「這件事情是『人的問題』，還是『制度問題』？」</div>
+                        <p class="text-xs text-slate-600">若是人，個別約談處理；若是制度漏洞，修改流程以防止下一個人再度踩雷。</p>
+                    </div>
+
+                    <div class="p-4 rounded-xl border border-slate-200 bg-slate-50 hover:bg-white hover:border-indigo-300 transition-all">
+                        <div class="text-xs font-bold text-indigo-600 mb-1">反問四：標準檢驗</div>
+                        <div class="text-sm font-black text-slate-900 mb-2">「如果今天換另一個師父，你還是會這樣處理嗎？」</div>
+                        <p class="text-xs text-slate-600">檢視自己是否有因偏好、年資長短或好欺負與否產生「雙重標準」，這是公平的試金石。</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 6. 賴信吉店長交流 -->
+            <section id="xinjie-mindset" class="bg-gradient-to-br from-amber-500 to-amber-600 rounded-2xl p-6 sm:p-8 text-slate-950 shadow-md">
+                <div class="flex items-center gap-3 mb-4">
+                    <div class="w-10 h-10 rounded-full bg-slate-950 text-amber-400 flex items-center justify-center font-bold text-base shadow">
+                        <i class="fa-solid fa-feather-pointed"></i>
+                    </div>
+                    <div>
+                        <span class="text-xs font-black uppercase tracking-wider text-slate-900/80">核心心法指引</span>
+                        <h2 class="text-xl sm:text-2xl font-black text-slate-950">賴信吉店長交流：管理者的定海神針</h2>
+                    </div>
+                </div>
+
+                <div class="bg-white/95 backdrop-blur rounded-xl p-6 shadow-sm space-y-3 text-slate-800 border border-amber-300/40">
+                    <p class="font-bold text-base sm:text-lg text-slate-950 leading-snug">
+                        「店長不是要讓所有師父都喜歡你，而是要讓大家知道：<br class="hidden sm:block">
+                        <span class="text-amber-700 bg-amber-100 px-2 py-0.5 rounded">有問題可以溝通</span>、<span class="text-amber-700 bg-amber-100 px-2 py-0.5 rounded">規則公平公正</span>、<span class="text-amber-700 bg-amber-100 px-2 py-0.5 rounded">該支持的我會支持，該執行的我也絕不退讓</span>。」
+                    </p>
+                    <p class="text-xs sm:text-sm text-slate-600 leading-relaxed pt-1">
+                        只要你把「公平、規則、信任」這三根柱子立穩，面對配合度低的狀況就不用害怕。現場遇到想不通的案例，隨時可以丟出來和我討論，但記得：先想好你的 Plan A 和 Plan B，我再陪你復盤！加油！💪
+                    </p>
+                </div>
+            </section>
+
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-slate-900 border-t border-slate-800 text-slate-400 py-8 px-4 text-center text-xs space-y-2">
+        <p class="font-semibold text-amber-400 text-sm tracking-widest mb-1">鳳山上崴店長專屬版</p>
+        <p class="text-slate-500">落實邏輯思維 ‧ 健全店內秩序 ‧ 打造公平信賴團隊 &copy; 2026</p>
+    </footer>
+
+    <script>
+        // 訪談紀錄資料結構與本地儲存
+        const STORAGE_KEY = 'fengshan_interview_records_v1';
+        let recordsData = [
+            {
+                id: 'rec-1',
+                staff: '12號師父',
+                date: '2026-09-18',
+                type: '類型 A',
+                reason: '連續兩趟做重度按壓客人，手腕酸痛並希望中間翻休半小時。',
+                action: '確認實際連續接單狀況無誤，依身心疲累保護原則調整下一輪輪替，並給予用餐休息。'
+            },
+            {
+                id: 'rec-2',
+                staff: '3號師父',
+                date: '2026-09-20',
+                type: '類型 B',
+                reason: '誤認櫃檯插單跳號，在排班台前表達不滿。',
+                action: '當面攤開預約單與輪牌時間紀錄，透明說明起算標準，消弭疑慮，回歸正軌。'
+            },
+            {
+                id: 'rec-3',
+                staff: '18號師父',
+                date: '2026-09-22',
+                type: '類型 C',
+                reason: '私下想挑早班離開店面，不願配合晚班關店整理。',
+                action: '使用三步驟對話，傾聽後溫和堅定宣告現場排班公平性，不因個人習慣破例。'
+            }
+        ];
+
+        // 初始化載入
+        function initRecords() {
+            const saved = localStorage.getItem(STORAGE_KEY);
+            if (saved) {
+                try {
+                    recordsData = JSON.parse(saved);
+                } catch(e) {
+                    console.error('Failed to parse records');
+                }
+            }
+            renderRecords(recordsData);
+            // 預設日期為今天
+            const today = new Date().toISOString().split('T')[0];
+            const dateInput = document.getElementById('record-date');
+            if (dateInput) dateInput.value = today;
+        }
+
+        // 渲染列表
+        function renderRecords(list) {
+            const container = document.getElementById('records-list');
+            const noMsg = document.getElementById('no-records-msg');
+            if (!container) return;
+
+            container.innerHTML = '';
+            if (!list || list.length === 0) {
+                if (noMsg) noMsg.classList.remove('hidden');
+                return;
+            }
+            if (noMsg) noMsg.classList.add('hidden');
+
+            const typeColorMap = {
+                '類型 A': { badge: 'bg-blue-100 text-blue-800', border: 'border-blue-200' },
+                '類型 B': { badge: 'bg-amber-100 text-amber-800', border: 'border-amber-200' },
+                '類型 C': { badge: 'bg-purple-100 text-purple-800', border: 'border-purple-200' },
+                '類型 D': { badge: 'bg-rose-100 text-rose-800', border: 'border-rose-200' }
+            };
+
+            list.forEach(item => {
+                const colors = typeColorMap[item.type] || { badge: 'bg-slate-100 text-slate-800', border: 'border-slate-200' };
+                const card = document.createElement('div');
+                card.className = `p-4 rounded-xl border ${colors.border} bg-slate-50/70 hover:bg-white hover:shadow-sm transition-all text-xs`;
+                card.innerHTML = `
+                    <div class="flex items-center justify-between mb-2">
+                        <div class="flex items-center gap-2">
+                            <span class="font-black text-sm text-slate-900">${escapeHtml(item.staff)}</span>
+                            <span class="px-2 py-0.5 rounded font-bold ${colors.badge}">${escapeHtml(item.type)}</span>
+                        </div>
+                        <div class="flex items-center gap-3 text-slate-400">
+                            <span><i class="fa-regular fa-calendar mr-1"></i>${escapeHtml(item.date)}</span>
+                            <button onclick="deleteRecord('${item.id}')" class="hover:text-rose-600 transition-colors" title="刪除此筆">
+                                <i class="fa-solid fa-trash-can"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="space-y-1.5 mt-2">
+                        <div class="text-slate-700">
+                            <span class="font-bold text-slate-900">師父反映：</span>${escapeHtml(item.reason)}
+                        </div>
+                        <div class="text-slate-700">
+                            <span class="font-bold text-emerald-800">店長處理：</span>${escapeHtml(item.action)}
+                        </div>
+                    </div>
+                `;
+                container.appendChild(card);
+            });
+        }
+
+        // 開關新增表單
+        function toggleRecordForm() {
+            const form = document.getElementById('record-form-container');
+            if (form) {
+                form.classList.toggle('hidden');
+            }
+        }
+
+        // 儲存紀錄
+        function saveInterviewRecord(e) {
+            e.preventDefault();
+            const staff = document.getElementById('record-staff').value.trim();
+            const date = document.getElementById('record-date').value;
+            const type = document.getElementById('record-type').value;
+            const reason = document.getElementById('record-reason').value.trim();
+            const action = document.getElementById('record-action').value.trim();
+
+            if (!staff || !date || !reason || !action) return;
+
+            const newRecord = {
+                id: 'rec-' + Date.now(),
+                staff,
+                date,
+                type,
+                reason,
+                action
+            };
+
+            recordsData.unshift(newRecord);
+            localStorage.setItem(STORAGE_KEY, JSON.stringify(recordsData));
+            document.getElementById('interview-form').reset();
+            toggleRecordForm();
+            filterRecords();
+        }
+
+        // 刪除紀錄
+        function deleteRecord(id) {
+            recordsData = recordsData.filter(r => r.id !== id);
+            localStorage.setItem(STORAGE_KEY, JSON.stringify(recordsData));
+            filterRecords();
+        }
+
+        // 搜尋與篩選邏輯
+        function filterRecords() {
+            const keyword = (document.getElementById('record-search')?.value || '').toLowerCase().trim();
+            const typeFilter = document.getElementById('record-filter-type')?.value || 'ALL';
+
+            const filtered = recordsData.filter(item => {
+                const matchType = (typeFilter === 'ALL') || (item.type === typeFilter);
+                const matchKeyword = !keyword || 
+                    item.staff.toLowerCase().includes(keyword) ||
+                    item.reason.toLowerCase().includes(keyword) ||
+                    item.action.toLowerCase().includes(keyword) ||
+                    item.date.includes(keyword);
+                return matchType && matchKeyword;
+            });
+
+            renderRecords(filtered);
+        }
+
+        // 重置篩選
+        function resetRecordFilter() {
+            if (document.getElementById('record-search')) document.getElementById('record-search').value = '';
+            if (document.getElementById('record-filter-type')) document.getElementById('record-filter-type').value = 'ALL';
+            renderRecords(recordsData);
+        }
+
+        // 防 XSS
+        function escapeHtml(str) {
+            if (!str) return '';
+            return str.replace(/[&<>"']/g, function(m) {
+                return {
+                    '&': '&amp;',
+                    '<': '&lt;',
+                    '>': '&gt;',
+                    '"': '&quot;',
+                    "'": '&#039;'
+                }[m];
+            });
+        }
+
+        window.addEventListener('DOMContentLoaded', () => {
+            initRecords();
+        });
+    </script>
+</body>
+</html>
